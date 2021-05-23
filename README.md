@@ -1,3 +1,0 @@
-# StockPrediction
-
-sure.
