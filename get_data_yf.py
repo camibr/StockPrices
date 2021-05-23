@@ -7,8 +7,6 @@
 
 import pandas as pd
 import yfinance as yf
-from datetime import date
-from dateutil.relativedelta import relativedelta
 
 from backtest import Strategy
 
@@ -41,15 +39,3 @@ class Get_data(Strategy):
         close_df = pd.DataFrame(close_series)       # converts back the pandas Series into a Dataframe
         return close_df                             # returns a dataframe with Date (as index) and Adj Close prices        
         
-
-""" 
-    entity = '^GSPC'
-
-
-
-    entity = '^GSPC'
-    end = (date.today()+relativedelta(years=-1)).strftime("%Y-%m-%d")
-    start = (date.today()+relativedelta(years=-5)).strftime("%Y-%m-%d")    # 'yyyy-mm-dd'
-    
-    candles = yf.download(entity, start, end)
-"""
