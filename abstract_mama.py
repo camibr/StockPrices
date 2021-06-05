@@ -1,4 +1,4 @@
-# backtest.py
+# abstract_mama.py
 
 from abc import ABCMeta, abstractmethod
 
